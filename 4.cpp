@@ -2,15 +2,18 @@
 using namespace std;
 
 int main() {
-    int a, b;
-    cin >> a >> b;
+    char ch;
+    cout << "Enter a character: ";
+    cin >> ch;
 
-    if (a > b)
-        cout << a;
-    else if (b > a)
-        cout << b;
+    if (ch >= 'A' && ch <= 'Z')
+        cout << "Uppercase letter";
+    else if (ch >= 'a' && ch <= 'z')
+        cout << "Lowercase letter";
+    else if (ch >= '0' && ch <= '9')
+        cout << "Digit";
     else
-        cout << "Equal";
+        cout << "Special character";
 
     return 0;
 }

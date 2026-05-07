@@ -2,21 +2,18 @@
 using namespace std;
 
 int main() {
-    int marks;
+    int a, b, c;
+    cout << "Enter three sides: ";
+    cin >> a >> b >> c;
 
-    cout << "Enter marks: ";
-    cin >> marks;
-
-    if (marks >= 90 && marks <= 100)
-        cout << "Grade A";
-    else if (marks >= 75)
-        cout << "Grade B";
-    else if (marks >= 50)
-        cout << "Grade C";
-    else if (marks >= 0)
-        cout << "Fail";
-    else
-        cout << "Invalid marks";
+    if (a == b && b == c)
+        cout << "Equilateral triangle";
+    else {
+        if (a == b || b == c || a == c)
+            cout << "Isosceles triangle";
+        else
+            cout << "Scalene triangle";
+    }
 
     return 0;
 }

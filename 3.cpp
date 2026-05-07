@@ -2,13 +2,21 @@
 using namespace std;
 
 int main() {
-    int num;
-    cin >> num;
+    int a, b, c;
+    cout << "Enter three numbers: ";
+    cin >> a >> b >> c;
 
-    if (num % 5 == 0)
-        cout << "Divisible by 5";
-    else
-        cout << "Not divisible by 5";
+    if (a >= b) {
+        if (a >= c)
+            cout << "Largest: " << a;
+        else
+            cout << "Largest: " << c;
+    } else {
+        if (b >= c)
+            cout << "Largest: " << b;
+        else
+            cout << "Largest: " << c;
+    }
 
     return 0;
 }
