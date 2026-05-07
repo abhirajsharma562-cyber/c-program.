@@ -2,16 +2,15 @@
 using namespace std;
 
 int main() {
-    int a, b, c;
-    cout << "Enter three numbers: ";
-    cin >> a >> b >> c;
+    int num;
+    cin >> num;
 
-    if (a >= b && a >= c)
-        cout << "Largest: " << a;
-    else if (b >= a && b >= c)
-        cout << "Largest: " << b;
+    if (num > 0)
+        cout << "Positive";
+    else if (num < 0)
+        cout << "Negative";
     else
-        cout << "Largest: " << c;
+        cout << "Zero";
 
     return 0;
 }

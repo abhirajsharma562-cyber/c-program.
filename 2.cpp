@@ -2,14 +2,13 @@
 using namespace std;
 
 int main() {
-    int year;
-    cout << "Enter year: ";
-    cin >> year;
+    int num;
+    cin >> num;
 
-    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
-        cout << "Leap Year";
+    if (num % 2 == 0)
+        cout << "Even";
     else
-        cout << "Not a Leap Year";
+        cout << "Odd";
 
     return 0;
 }
