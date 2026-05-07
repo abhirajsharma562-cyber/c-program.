@@ -2,27 +2,14 @@
 using namespace std;
 
 int main() {
-    int num;
-    bool isPrime = true;
+    char ch;
+    cin >> ch;
 
-    cout << "Enter a number: ";
-    cin >> num;
-
-    if (num <= 1)
-        isPrime = false;
-    else {
-        for (int i = 2; i <= num / 2; i++) {
-            if (num % i == 0) {
-                isPrime = false;
-                break;
-            }
-        }
-    }
-
-    if (isPrime)
-        cout << "Prime number";
+    if (ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||
+        ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
+        cout << "Vowel";
     else
-        cout << "Not a prime number";
+        cout << "Consonant";
 
     return 0;
 }

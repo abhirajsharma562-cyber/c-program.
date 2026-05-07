@@ -1,19 +1,14 @@
-
 #include <iostream>
 using namespace std;
 
 int main() {
-    int n;
-    long long fact = 1;
+    int num;
+    cin >> num;
 
-    cout << "Enter a number: ";
-    cin >> n;
-
-    for (int i = 1; i <= n; i++) {
-        fact *= i;
-    }
-
-    cout << "Factorial = " << fact;
+    if (num % 5 == 0)
+        cout << "Divisible by 5";
+    else
+        cout << "Not divisible by 5";
 
     return 0;
 }

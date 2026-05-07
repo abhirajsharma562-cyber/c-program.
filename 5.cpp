@@ -2,18 +2,13 @@
 using namespace std;
 
 int main() {
-    int num, sum = 0, remainder;
+    int age;
+    cin >> age;
 
-    cout << "Enter a number: ";
-    cin >> num;
-
-    while (num != 0) {
-        remainder = num % 10;
-        sum += remainder;
-        num /= 10;
-    }
-
-    cout << "Sum of digits = " << sum;
+    if (age >= 18)
+        cout << "Eligible to vote";
+    else
+        cout << "Not eligible";
 
     return 0;
 }

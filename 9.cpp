@@ -2,20 +2,17 @@
 using namespace std;
 
 int main() {
+    int num;
 
-    cout << "Demonstrating continue:\n";
-    for (int i = 1; i <= 10; i++) {
-        if (i == 5)
-            continue;
-        cout << i << " ";
-    }
+    cout << "Enter a number: ";
+    cin >> num;
 
-    cout << "\n\nDemonstrating break:\n";
-    for (int i = 1; i <= 10; i++) {
-        if (i == 5)
-            break;
-        cout << i << " ";
-    }
+    if (num > 0)
+        cout << "Positive";
+    else if (num < 0)
+        cout << "Negative";
+    else
+        cout << "Zero";
 
     return 0;
 }
