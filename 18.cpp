@@ -1,19 +1,15 @@
-
 #include <iostream>
 using namespace std;
 
 int main() {
-    int n;
-    long long fact = 1;
-
-    cout << "Enter a number: ";
+    int n, sum = 0;
+    cout << "Enter n: ";
     cin >> n;
 
     for (int i = 1; i <= n; i++) {
-        fact *= i;
+        sum += i * i;
     }
 
-    cout << "Factorial = " << fact;
-
+    cout << "Sum = " << sum;
     return 0;
 }

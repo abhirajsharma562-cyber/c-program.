@@ -2,8 +2,14 @@
 using namespace std;
 
 int main() {
+    int start, end;
 
-    for (int num = 2; num <= 100; num++) {
+    cout << "Enter range: ";
+    cin >> start >> end;
+
+    for (int num = start; num <= end; num++) {
+        if (num <= 1) continue;
+
         bool isPrime = true;
 
         for (int i = 2; i <= num / 2; i++) {

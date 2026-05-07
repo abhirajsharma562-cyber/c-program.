@@ -2,15 +2,27 @@
 using namespace std;
 
 int main() {
-    int num, count = 0;
-    cout << "Enter number: ";
+    int num;
+    bool isPrime = true;
+
+    cout << "Enter a number: ";
     cin >> num;
 
-    while (num != 0) {
-        num /= 10;
-        count++;
+    if (num <= 1)
+        isPrime = false;
+    else {
+        for (int i = 2; i <= num / 2; i++) {
+            if (num % i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
     }
 
-    cout << "Number of digits: " << count;
+    if (isPrime)
+        cout << "Prime number";
+    else
+        cout << "Not a prime number";
+
     return 0;
 }

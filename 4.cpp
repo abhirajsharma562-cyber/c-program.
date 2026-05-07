@@ -2,15 +2,19 @@
 using namespace std;
 
 int main() {
-    int n, i = 1, sum = 0;
-    cout << "Enter n: ";
+    int n, t1 = 0, t2 = 1, next;
+
+    cout << "Enter number of terms: ";
     cin >> n;
 
-    while (i <= n) {
-        sum += i;
-        i++;
+    cout << "Fibonacci Series: ";
+
+    for (int i = 1; i <= n; i++) {
+        cout << t1 << " ";
+        next = t1 + t2;
+        t1 = t2;
+        t2 = next;
     }
 
-    cout << "Sum = " << sum;
     return 0;
 }
